@@ -4,8 +4,9 @@
   "description": "Server build with Express.js",
   "main": "src/server.ts",
   "scripts": {
+    "start": "node dist/server.js",
     "dev": "tsx watch src/server.ts",
-    "start": "tsx dist/app.js",
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
     "express": "^5.3.0",
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.23.1",
+    "tsup": "^9.0.0",
     "typescript": "^7.0.2"
   },
   "devDependencies": {
